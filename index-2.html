@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100%;
+            height: 100vh;
+            border: 5px solid blue;
+        }
+        .container{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #item{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: bisque;
+            
+        }
+        button{
+            width: 85px;
+            height: 20px;
+            background-color: rgb(2, 2, 116);
+            color: white;
+            border-radius: 8px;
+            border: none;
+            margin: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <div id="item">
+
+        </div>
+    </div>
+    <button type="button" onclick="document.getElementById('item').style.background='bisque'">bisque</button>
+    <button type="button" onclick="document.getElementById('item').style.background='aqua'">aqua</button>
+    <button type="button" onclick="document.getElementById('item').style.background='blue'">blue</button>
+    <button type="button" onclick="document.getElementById('item').style.background='rgb(98, 165, 253)'">sky</button>
+    <button type="button" onclick="document.getElementById('item').style.background='black'">black</button>
+    <button type="button" onclick="document.getElementById('item').style.background='gray'">gray</button>
+    <button type="button" onclick="document.getElementById('item').style.background='red'">red</button>
+    <button type="button" onclick="document.getElementById('item').style.background='orange'">orange</button>
+    <button type="button" onclick="document.getElementById('item').style.background='tomato'">tomato</button>
+    <button type="button" onclick="document.getElementById('item').style.background='rgb(206, 6, 116)'">rosy</button>
+    <button type="button" onclick="document.getElementById('item').style.background='rgb(250, 103, 225)'">pink</button>
+    <button type="button" onclick="document.getElementById('item').style.background='rgb(121, 4, 4)'">maron</button>
+    <button type="button" onclick="document.getElementById('item').style.background='yellow'">yellow</button>
+    <button type="button" onclick="document.getElementById('item').style.background='yellowgreen'">yellowgreen</button>
+    <button type="button" onclick="document.getElementById('item').style.background='green'">green</button>
+    <button type="button" onclick="document.getElementById('item').style.background='rgb(1, 87, 1)'">darkgreen</button>
+    <button type="button" onclick="document.getElementById('item').style.background= 'radial-gradient(red, yellow, green)'">gradient</button>
+ </div>
+
+
+    <script>
+        alert("Do you want to see different types of color?")
+    </script>
+</body>
+</html>

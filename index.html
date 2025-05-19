@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .f1{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .f2{
+            width: 400px;
+            height: 400px;
+        }
+        .f2 img{
+            object-fit: cover;
+        }
+        button{
+            margin-top: 550px;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <script>
+        
+        var a=15;
+        var b=10;
+        let y=a+b;
+        document.write(y)
+        document.write("<br><br>")
+        console.log("total ="+" "+(a+b)); 
+        document.write("total ="+" "+(a+b));
+        document.write("<br><br>")
+        console.log("rest ="+" "+(a-b));
+        document.write("rest ="+" "+(a-b));
+        document.write("<br><br>")
+        document.write(a=b>y);
+
+    </script>
+    <div class="f1">
+        <div class="f2" >
+            <img src="image/fruits.jpg" alt="" id="ra">
+        </div>
+        <button onclick="document.getElementById('ra').src='image/jack.jpg'">Jackfruit</button>
+        <button onclick="document.getElementById('ra').src='image/mango.jpg'">Mango</button>
+        <button onclick="document.getElementById('ra').src='image/ban.jpg'">Banana</button>
+        <button onclick="document.getElementById('ra').src='image/lichi.jpg'">Lichi</button>
+        <button onclick="document.getElementById('ra').src='image/or.png'">Orange</button>
+    </div>
+    <!-- <h2 id="rafi">javascript</h2>
+     <button type="button" onclick='document.getElementById("rafi").innerHTML="Rasel is the Boss of javascript"'>Rasel</button>
+     <button type="button" onclick='document.getElementById("rafi").innerHTML="Sifat is the Boss of Copy-paste"'>Sifat</button> -->
+</body>
+</html>
