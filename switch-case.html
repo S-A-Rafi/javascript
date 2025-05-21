@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <Script>
+        /*let letter = prompt("Enter letter");
+            letter = letter.toUpperCase();
+        switch (letter) {
+            case  "A":
+                document.write("Vowel");
+                break;
+            case  "E":
+                document.write("Vowel");
+                break;
+            case  "I":
+                document.write("Vowel");
+                break;
+            case  "O":
+                document.write("Vowel");
+                break;
+            case  "U":
+                document.write("Vowel");
+                break;
+            default:
+            document.write("Consonent");
+                
+        }*/
+        
+        let x = prompt("Enter number")
+            x = x.toLowerCase();
+        switch(x){
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                document.write("Vowel");
+            break;
+            default:
+                if(x.match(/^[a-z]$/)){
+                    document.write("Consonant");
+                }else{
+                    document.write("Invalid input, please enter a single letter.")
+                }
+            }
+        
+       
+        /*let a = prompt("Enter number");
+            a = Number(a);
+        let c = prompt("Enter number");
+            c = Number(c);
+        alert("Total is"+" "+(a+c));*/
+
+    </Script>
+</body>
+</html>

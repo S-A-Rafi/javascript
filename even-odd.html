@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ev{
+            color: rgb(182, 2, 152);
+            font-size: 50px;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // even and odd 
+
+        let num = prompt("enter a number");
+            num = Number(num);
+        let nun = (num % 2);
+
+        if(nun == 0){
+            document.write('<span class="ev">'+ num + ' is even number </span>');
+            console.log(num +" is even number");
+        }else{
+            document.write('<span class="ev">'+ num + ' is odd number </span>');
+            console.log(num +" is odd number");
+        }
+        
+
+
+       /* let num = prompt("enter a number");
+
+        let nun = (num % 2 == 0) ? "even" : "odd";
+        document.write(nun);
+        */
+
+        
+        </script>
+</body>
+</html>
