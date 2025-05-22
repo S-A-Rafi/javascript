@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    const marks = parseFloat(prompt("Enter your marks out of 100:"));
+
+    if (isNaN(marks) || marks < 0 || marks > 100) {
+        alert("Please enter a valid number between 0 and 100.");
+    } else {
+        let grade;
+        // let percentage = marks;
+
+        if (marks >= 90) {
+            grade = "A+";
+        } else if (marks >= 60) {
+            grade = "A";
+        } else if (marks >= 50) {
+            grade = "B";
+        } else {
+            grade = "Fail";
+        }
+
+        alert("Percentage: " + marks + "%\nGrade: " + grade);
+    }
+</script>
+</body>
+</html>

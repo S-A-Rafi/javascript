@@ -3,27 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Letter Type</title>
 </head>
 <body>
     <script>
-        let x = prompt("Enter number")
-            x = x.toLowerCase();
-        switch(x){
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-                document.write("Vowel");
-            break;
-            default:
-                if(x.match(/^[a-z]$/)){
-                    document.write("Consonant");
-                }else{
-                    document.write("Invalid input, please enter a single letter.")
-                }
-            }
+        // let x = prompt("Enter number")
+        //     x = x.toLowerCase();
+        // switch(x){
+        //     case 'a':
+        //     case 'e':
+        //     case 'i':
+        //     case 'o':
+        //     case 'u':
+        //         document.write("Vowel");
+        //     break;
+        //     default:
+        //         if(x.match(/^[a-z]$/)){
+        //             document.write("Consonant");
+        //         }else{
+        //             document.write("Invalid input, please enter a single letter.")
+        //         }
+        //     }
+
+
+
+
+
+ let string =prompt("Enter the string");
+ let count = 0;
+ 
+ for ( let i=0; i<string.length; i++){
+  let letter = string[i].toLowerCase();
+  if(letter=="a"|| letter=="e" || letter=="i" || letter=="o" || letter=="u"){
+    count++;
+  }
+ }
+ document.write("string is:",string); 
+ document.write("<br>");
+ document.write("Vowels: ",count,"Consonants:",(string.length-count));
+ 
     </script>
 </body>
 </html>
