@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = parseFloat(prompt("Enter the 1st value"));
+        let num2 = parseFloat(prompt("Enter the 2nd value"));
+        let num3 = parseFloat(prompt("Enter the 3rd value"));
+
+        let numbers = [num1,num2,num3]
+
+        numbers.sort(function(a,b){
+            return b - a;
+        });
+        document.write("Numbers in decending orders : " + numbers.join(","));
+
+    </script>
+</body>
+</html>
