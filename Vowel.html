@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        // let x = prompt("Enter number")
+        // let x = prompt("Enter letter")
         //     x = x.toLowerCase();
         // switch(x){
         //     case 'a':
@@ -29,19 +29,53 @@
 
 
 
- let string =prompt("Enter the string");
- let count = 0;
+//  let string =prompt("Enter the string");
+//  let count = 0;
  
- for ( let i=0; i<string.length; i++){
-  let letter = string[i].toLowerCase();
-  if(letter=="a"|| letter=="e" || letter=="i" || letter=="o" || letter=="u"){
-    count++;
+//  for ( let i=0; i<string.length; i++){
+//   let letter = string[i].toLowerCase();
+//   if(letter=="a"|| letter=="e" || letter=="i" || letter=="o" || letter=="u"){
+//     count++;
+//   }
+//   else {
+//     consonant
+//   }
+//  }
+//  document.write("string is:",string); 
+//  document.write("<br>");
+//  document.write("Vowels: ",count,"Consonants:",(string.length-count));
+ 
+
+
+
+
+
+ 
+     let input = prompt("Enter a word or sentence:").toLowerCase();
+
+let vowels = "aeiou";
+let vowelCount = 0;
+let consonantCount = 0;
+let vowelOccur = {};
+let consOccur = {};
+
+for (let char of input) {
+  if (char >= 'a' && char <= 'z') {
+   
+    if (vowels.includes(char)) {
+      vowelCount++;
+      vowelOccur[char] = (vowelOccur[char] || 0) + 1;
+
+    } else {
+      consonantCount++;
+      consOccur[char] = (consOccur[char] || 0) + 1;
+    }
   }
- }
- document.write("string is:",string); 
- document.write("<br>");
- document.write("Vowels: ",count,"Consonants:",(string.length-count));
- 
+}
+
+console.log("Vowels:", vowelCount, vowelOccur);
+console.log("Consonants:", consonantCount, consOccur);
+
     </script>
 </body>
 </html>

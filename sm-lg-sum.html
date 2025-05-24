@@ -7,9 +7,12 @@
 </head>
 <body>
     <script>
-        var numbers = [4, 8, 15, 2, 23, 16, 42];
 
-let smallest = numbers[0];
+ var a =Number(prompt("enter a number"));
+ var b = Number(prompt("enter a number"));
+ var c = Number(prompt("enter a number"));
+ var numbers = [a,b,c]
+ let smallest = numbers[0];
 let largest =  numbers [0];
 let sum = 0;
 
@@ -22,12 +25,33 @@ for ( let num of numbers){
     else if ( num > largest){
         largest = num;
     }
-} dsjklhjh 
-
-
+}
 document.write("The smallest number is:" + smallest +"<br>");
 document.write("The largest number is:" + largest +"<br>");
 document.write("sum of all number are:" + sum);
+
+
+//         var numbers = [4, 8, 15, 2, 23, 16, 42];
+
+// let smallest = numbers[0];
+// let largest =  numbers [0];
+// let sum = 0;
+
+// for ( let num of numbers){
+//     sum += num;
+
+//     if ( num < smallest){
+//         smallest = num;
+//     }
+//     else if ( num > largest){
+//         largest = num;
+//     }
+// }
+
+
+// document.write("The smallest number is:" + smallest +"<br>");
+// document.write("The largest number is:" + largest +"<br>");
+// document.write("sum of all number are:" + sum);
 
     </script>
 </body>
