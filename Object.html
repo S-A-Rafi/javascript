@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const wdpf ={
+        //     mam : "farhana",
+        //     cm : "selina",
+        //     cr : "asad",
+        // }
+        // wdpf.cr = "mahidul"
+        // for (let key in wdpf) {
+        // document.write(key +" : " + wdpf[key] + "<br>");
+        // }
+
+        // const student = {
+        //     firstName : "Rasel",
+        //     lastName : "Hossain",
+        //     age : 35,
+        //     roll : 1,
+        //     fullName : function(){
+        //         return this.firstName+" "+this.lastName;
+        //     }
+        // }
+        // document.write(student.fullName())
+
+    let car = {
+    brand: "Toyota",
+    model: "Corolla",
+    isEngineOn: false,
+    isMoving: false,
+
+    start: function() {
+        if (!this.isEngineOn) {
+            this.isEngineOn = true;
+            console.log("🔑 Engine started. Vrooom!");
+        } else {
+            console.log("⚠️ Engine is already on.");
+        }
+    },
+
+    drive: function() {
+        if (this.isEngineOn) {
+            this.isMoving = true;
+            console.log("🚗 The car is now driving. Vroooooooooo");
+        } else {
+            console.log("⚠️ Start the engine first!");
+        }
+    },
+
+    brake: function() {
+        if (this.isMoving) {
+            this.isMoving = false;
+            console.log("🛑 The car has stopped moving.");
+        } else {
+            console.log("⚠️ The car is already stopped.");
+        }
+    },
+
+    stop: function() {
+        if (this.isEngineOn) {
+            this.isEngineOn = false;
+            this.isMoving = false;
+            console.log("🛑 Engine turned off.");
+        } else {
+            console.log("⚠️ Engine is already off.");
+        }
+    }
+};
+
+
+car.drive();    
+car.start();    
+car.drive();    
+car.brake();    
+car.stop();     
+    </script>
+</body>
+</html>

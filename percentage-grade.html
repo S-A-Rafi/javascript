@@ -9,24 +9,22 @@
    <script>
     const marks = parseFloat(prompt("Enter your marks out of 100:"));
 
-    if (isNaN(marks) || marks < 0 || marks > 100) {
-        alert("Please enter a valid number between 0 and 100.");
-    } else {
+    
         let grade;
         // let percentage = marks;
 
-        if (marks >= 90) {
+        if (marks >= 80) {
             grade = "A+";
-        } else if (marks >= 60) {
+        } else if (marks >= 70) {
             grade = "A";
-        } else if (marks >= 50) {
+        } else if (marks >= 60) {
             grade = "B";
         } else {
             grade = "Fail";
         }
 
-        alert("Percentage: " + marks + "%\nGrade: " + grade);
-    }
+        document.write("Percentage: " + marks + "%\nGrade: " + grade);
+   
 </script>
 </body>
 </html>

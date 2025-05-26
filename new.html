@@ -6,27 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-   <script>
-    const marks = parseFloat(prompt("Enter your marks out of 100:"));
-
-    if (isNaN(marks) || marks < 0 || marks > 100) {
-        alert("Please enter a valid number between 0 and 100.");
-    } else {
-        let grade;
-        // let percentage = marks;
-
-        if (marks >= 90) {
-            grade = "A+";
-        } else if (marks >= 60) {
-            grade = "A";
-        } else if (marks >= 50) {
-            grade = "B";
-        } else {
-            grade = "Fail";
+    <script>
+        let tel = prompt("enter name").toLowerCase();
+        if (tel == "asad"){
+            alert("The litle of "+ tel + " is PongPong");
+        } else if (tel == "rasel"){
+            alert("The litle of "+ tel + " is Boss");
         }
+        else if (tel == "sifat"){
+            alert("The litle of "+ tel + " is jirjir");
+        }
+    </script>
 
-        alert("Percentage: " + marks + "%\nGrade: " + grade);
-    }
-</script>
 </body>
 </html>
