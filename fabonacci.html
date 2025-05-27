@@ -7,38 +7,34 @@
 </head>
 <body>
     <script>
-//         function fibonacci(n) {
-//     if (n === 0) return 0;
-//     if (n === 1) return 1;
+      
+        let n = Number(prompt("input a number"));
 
-//     let prev = 0;
-//     let curr = 1;
-
-//     for (let i = 2; i <= n; i++) {
-//         let next = prev + curr;
-//         prev = curr;
-//         curr = next;
-//     }
-
-//     return curr;
-// }
-
-// // 🧪 Example usage:
-// console.log(fibonacci(10)); // Output: 55
-
-
-
-function fibonacciSeries(n) {
-    let fib = [0, 1];
+    let prev = 0;
+    let curr = 1;
 
     for (let i = 2; i <= n; i++) {
-        fib[i] = fib[i - 1] + fib[i - 2];
+        let next = prev + curr;
+        prev = curr;
+        curr = next;
     }
 
-    return fib.slice(0, n + 1);
-}
+    
 
-console.log(fibonacciSeries(10));
+    document.write("fabonacci number is "+ curr);
+
+
+// function fibonacciSeries(n) {
+//     let fib = [0, 1];
+
+//     for (let i = 2; i <= n; i++) {
+//         fib[i] = fib[i - 1] + fib[i - 2];
+//     }
+
+//     return fib.slice(0, n + 1);
+// }
+
+// console.log(fibonacciSeries(10));
 // Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 
