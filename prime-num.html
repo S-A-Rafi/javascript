@@ -7,12 +7,14 @@
 </head>
 <body>
     <script>
-        let input = parseFloat(prompt("input a limit"));
+        let n = parseFloat(prompt("input a limit"));
          
         function prime(n){
             if (n <= 1) return false
-            for (let i = 2; i*i<=input; i++){
-                if (n%i === 0) return false
+            for (let i = 2; i<n; i++){
+                if (n%i === 0){
+                    return false
+                } 
             }
             return true
         }
