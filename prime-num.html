@@ -7,26 +7,26 @@
 </head>
 <body>
     <script>
-        let n = parseFloat(prompt("input a limit"));
+        //  let n = parseFloat(prompt("input a limit"));
          
-        function prime(n){
-            if (n <= 1) return false
-            for (let i = 2; i<n; i++){
-                if (n%i === 0){
-                    return false
-                } 
-            }
-            return true
-        }
+        //  function prime(n){
+        //      if (n <= 1) return false
+        //      for (let i = 2; i<n; i++){
+        //          if (n%i === 0){
+        //              return false
+        //          } 
+        //      }
+        //      return true
+        //  }
+         
+        // let primes = [];
+        // for (let i = 2; i<=input; i++){
+        //     if (prime(i)){
+        //         primes.push(i)
+        //     }
 
-        let primes = [];
-        for (let i = 2; i<=input; i++){
-            if (prime(i)){
-                primes.push(i)
-            }
-
-        }
-        document.write("Prime numbers up to "+ input + ":<br>"+"( "+ primes.join(", ")+" )")
+        // }
+        // document.write("Prime numbers up to "+ input + ":<br>"+"( "+ primes.join(", ")+" )")
 
 
 //     const numbers = [1, 2, 3, 4, 5, 10, 11, 13, 16, 17, 18, 29, 30];
@@ -57,23 +57,23 @@
 
 
 
-// let givenNo = parseInt(prompt("Provide the no you want to test"));
+let givenNo = parseInt(prompt("Provide the no you want to test"));
 
-//       let prime = true;
-//       for (let i = 2; i < givenNo; i++) {
-//         if (givenNo === 0 || givenNo === 1) {
-//           prime = false;
-//         } else if (givenNo % i === 0) {
-//           prime = false;
-//           break;
-//         }
-//       }
+      let prime = true;
+      for (let i = 2; i < givenNo; i++) {
+        if (givenNo === 0 || givenNo === 1) {
+          prime = false;
+        } else if (givenNo % i === 0) {
+          prime = false;
+          break;
+        }
+      }
 
-//       if (prime === false) {
-//         document.write(<h1> Your Given No ${givenNo}, is a Composite Number </h1>);
-//       } else {
-//        document.write(<h1> Your Given No ${givenNo}, is a Prime  Number </h1>);
-//       }
+      if (prime === false) {
+        document.write(`<h1> Your Given No ${givenNo}, is a Composite Number </h1>`);
+      } else {
+       document.write(`<h1> Your Given No ${givenNo}, is a Prime  Number </h1>`);
+      }
 
 
     </script>
