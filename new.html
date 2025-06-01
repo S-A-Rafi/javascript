@@ -40,14 +40,38 @@
 
 
         //practice javascript function
-        let Rafi = function(a,b,c){ 
-            return (a+b+c);
+        // let Rafi = function(a,b,c){ 
+        //     return (a+b+c);
+        // }
+        // console.log("Total = "+Rafi(2,3,4));
+
+
+        // Rasel = (a,b,c) => a+b+c;
+        // console.log("Total = "+Rasel(2,3,4));
+
+
+
+
+
+        //function constructor
+
+        function person(name, age, roll) {
+            this.name = name;
+            this.age = age;
+            this.roll = roll;
+            this.info = function() {
+                console.log("Hello, I am " + this.name + ". I am " + this.age + " years old.")
+            }
         }
-        console.log("Total = "+Rafi(2,3,4));
+        let person2 = new person("Ramjan", 35);
+        let person3 = new person("Rayan", 30);
+        let person4 = new person("Rasel", 55);
+
+        person2.info();
+        person3.info();
+        person4.info();
 
 
-        Rasel = (a,b,c) => a+b+c;
-        console.log("Total = "+Rasel(2,3,4));
 
     </script>
 
