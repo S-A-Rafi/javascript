@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Home {
+            constructor(name, color, room) {
+                this.name = name,
+                this.color = color,
+                this.room = room
+            }
+            make() {
+                document.write("style : " + this.name + ", color : " + this.color + ", room : " + this.room + "<br>")
+            }
+        }
+
+        let Rafi = new Home("Banglo", "gray", 5);
+        let Rasel = new Home("Frade", "skyblue", 8);
+
+        Rafi.make();
+        Rasel.make();
+        Rafi.make();
+        Rasel.make();
+        Rafi.make();
+        Rasel.make();
+
+    </script>
+</body>
+</html>
